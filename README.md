@@ -1,6 +1,8 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+The Star Rating Plugin is a form element in Joget that users can easily click to give rating.
+
+Marketplace listing at https://marketplace.joget.org/jw/web/userview/mp/mpp/_/vad?id=star_rating_v5
 
 # Getting Help
 
