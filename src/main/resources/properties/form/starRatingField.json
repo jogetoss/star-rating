@@ -1,0 +1,83 @@
+[{
+    title : '@@form.starRating.config@@',
+    properties : [{
+        name : 'id',
+        label : '@@form.radio.id@@',
+        type : 'textfield',
+        required : 'True',
+        regex_validation : '^[a-zA-Z0-9_]+$',
+        validation_message : '@@form.radio.invalidId@@'
+    },
+    {
+        name : 'label',
+        label : '@@form.radio.label@@',
+        type : 'textfield',
+        value : '@@org.joget.StarRatingField.pluginLabel@@'
+    }]
+},
+{
+    title : '@@form.radio.advancedOptions@@',
+    properties : [{
+        label : '@@form.radio.data@@',
+        type : 'header'
+    },
+    {
+        name : 'enableHalfValue',
+        label : '@@form.starRating.enableHalfValue@@',
+        type : 'checkbox',
+        options : [
+            {value : 'true', label : ''}
+        ]
+    },
+    {
+        name : 'validator',
+        label : '@@form.radio.validator@@',
+        type : 'elementselect',
+        options_ajax : '[CONTEXT_PATH]/web/property/json/getElements?classname=org.joget.apps.form.model.FormValidator',
+        url : '[CONTEXT_PATH]/web/property/json[APP_PATH]/getPropertyOptions'
+    },
+    {
+        label : '@@form.radio.ui@@',
+        type : 'header'
+    },
+    {
+        name : 'readonly',
+        label : '@@form.radio.readonly@@',
+        type : 'checkbox',
+        value : 'False',
+        options : [{
+            value : 'true',
+            label : ''
+        }]
+    },
+    {
+        name : 'hoverColor',
+        label : '@@form.starRating.hoverColor@@',
+        type : 'textfield',
+        value : '@@form.starRating.hoverColor.value@@',
+        required : 'True'
+    },
+    {
+        name : 'selectedColor',
+        label : '@@form.starRating.selectedColor@@',
+        type : 'textfield',
+        value : '@@form.starRating.selectedColor.value@@',
+        required : 'True'
+    },
+    {
+        name : 'hoverSelectedColor',
+        label : '@@form.starRating.hoverSelectedColor@@',
+        type : 'textfield',
+        value : '@@form.starRating.hoverSelectedColor.value@@',
+        required : 'True'
+    },
+    {
+        label : '@@form.radio.workflow@@',
+        type : 'header'
+    },
+    {
+        name : 'workflowVariable',
+        label : '@@form.radio.workflowVariable@@',
+        type : 'textfield'
+    }]
+}]

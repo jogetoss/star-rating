@@ -1,0 +1,55 @@
+#form-canvas .starrating label {
+    font-size: 30px;
+}
+.starrating {
+    float:left;
+}
+.starrating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+.starrating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:.1em .1em .2em rgba(0,0,0,.5);
+}
+.starrating.half:not(:checked) > label {
+    margin-left:-0.6em;
+}
+.starrating:not(:checked) > label.half {
+    width:0.40em;
+    margin-left:0;
+    text-shadow:1em .1em .2em rgba(0,0,0,0);
+}
+.starrating:not(:checked) > label:before {
+    content: '★ ';
+}
+.starrating > input:checked ~ label {
+    text-shadow:.1em .1em .2em rgba(0,0,0,.5);
+}
+.starrating > input:checked ~ label.half {
+    text-shadow:.1em .1em .2em rgba(0,0,0,0);
+}
+.starrating:not(:checked) > label:hover,
+.starrating:not(:checked) > label:hover ~ label {
+    text-shadow:.1em .1em .2em rgba(0,0,0,.5);
+}
+.starrating > input:checked + label:hover,
+.starrating > input:checked + label:hover ~ label,
+.starrating > input:checked ~ label:hover,
+.starrating > input:checked ~ label:hover ~ label,
+.starrating > label:hover ~ input:checked ~ label {
+    text-shadow:.1em .1em .2em rgba(0,0,0,.5);
+}
+.starrating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
