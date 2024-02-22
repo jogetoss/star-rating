@@ -1,0 +1,25 @@
+[
+    {
+       "title":"@@form.StarRatingFieldDatalistFormatter.config@@",
+       "properties":[
+          {
+             "name":"enableHalfValue",
+             "label":"@@form.StarRatingFieldDatalistFormatter.enableHalfValue@@",
+             "type":"checkbox",
+             "options":[
+                {
+                   "value":"true",
+                   "label":""
+                }
+             ]
+          },
+          {
+             "name":"ratingColor",
+             "label":"@@form.StarRatingFieldDatalistFormatter.ratingColor@@",
+             "type":"color",
+             "value":"@@form.StarRatingFieldDatalistFormatter.ratingColor.value@@",
+             "required":"True"
+          }
+       ]
+    }
+ ]

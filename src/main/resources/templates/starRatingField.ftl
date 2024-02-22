@@ -4,9 +4,9 @@
     </#if>   
     <label class="label">${element.properties.label} <span class="form-cell-validator">${decoration}</span><#if error??> <span class="form-error-message">${error}</span></#if></label>
     <style>
-        #${elementParamName!}${element.properties.elementUniqueKey!} .starrating > input:checked ~ label {color: ${element.properties.hoverColor!};}
+        #${elementParamName!}${element.properties.elementUniqueKey!} .starrating > input:checked ~ label {color: ${element.properties.ratingColor!};}
         <#if element.properties.readonly! != 'true'>
-            #${elementParamName!}${element.properties.elementUniqueKey!} .starrating:not(:checked) > label:hover, #${elementParamName!}${element.properties.elementUniqueKey!} .starrating:not(:checked) > label:hover ~ label {color: ${element.properties.selectedColor!};}
+            #${elementParamName!}${element.properties.elementUniqueKey!} .starrating:not(:checked) > label:hover, #${elementParamName!}${element.properties.elementUniqueKey!} .starrating:not(:checked) > label:hover ~ label {color: ${element.properties.hoverUnselectedColor!};}
             #${elementParamName!}${element.properties.elementUniqueKey!} .starrating > input:checked + label:hover, #${elementParamName!}${element.properties.elementUniqueKey!} .starrating > input:checked + label:hover ~ label, #${elementParamName!}${element.properties.elementUniqueKey!} .starrating > input:checked ~ label:hover, #${elementParamName!}${element.properties.elementUniqueKey!} .starrating > input:checked ~ label:hover ~ label, #${elementParamName!}${element.properties.elementUniqueKey!} .starrating > label:hover ~ input:checked ~ label {color: ${element.properties.hoverSelectedColor!};}
         </#if> 
     </style>    

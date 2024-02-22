@@ -15,6 +15,7 @@ public class Activator implements BundleActivator {
 
         //Register plugin here
         registrationList.add(context.registerService(StarRatingField.class.getName(), new StarRatingField(), null));
+        registrationList.add(context.registerService(StarRatingFieldDatalistFormatter.class.getName(), new StarRatingFieldDatalistFormatter(), null));
     }
 
     public void stop(BundleContext context) {
