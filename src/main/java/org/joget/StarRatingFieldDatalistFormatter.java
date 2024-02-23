@@ -47,7 +47,7 @@ public class StarRatingFieldDatalistFormatter extends DataListColumnFormatDefaul
             String enableHalfValue = getPropertyString("enableHalfValue");
             String ratingColor = getPropertyString("ratingColor");
     
-            String uniqueId = column.getName() + DataListService.evaluateColumnValueFromRow(row, "id").toString();
+            String uniqueId = (column.getName() + DataListService.evaluateColumnValueFromRow(row, "id").toString()).replaceAll("\\s", "");
 
             HttpServletRequest request = WorkflowUtil.getHttpServletRequest();
             if (request != null && request.getAttribute(getClassName()) == null) {
