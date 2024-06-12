@@ -4,6 +4,8 @@ The Star Rating Plugin is a form element in Joget that users can easily click to
 
 Marketplace listing at https://marketplace.joget.org/jw/web/userview/mp/mpp/_/vad?id=star_rating_v5
 
+Please refer to its [documentation](https://dev.joget.org/community/display/marketplace/Star+Rating+Plugin).
+
 # Getting Help
 
 JogetOSS is a community-led team for open source software related to the [Joget](https://www.joget.org) no-code/low-code application platform.
